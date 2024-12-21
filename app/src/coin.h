@@ -48,16 +48,16 @@ typedef enum {
 #define VIEW_ADDRESS_OFFSET_SECP256K1       PK_LEN_SECP256K1
 #define VIEW_ADDRESS_LAST_PAGE_DEFAULT      0
 
-#define MENU_MAIN_APP_LINE1                "THORChain"
+#define MENU_MAIN_APP_LINE1                "MAYAChain"
 #define MENU_MAIN_APP_LINE2                "Ready"
 #define APPVERSION_LINE1                   "Version:"
 #define APPVERSION_LINE2                   ("v" APPVERSION)
 
-#define COIN_DEFAULT_CHAINID                "thorchain"
+#define COIN_DEFAULT_CHAINID                "mayachain"
 
-#define COIN_DEFAULT_DENOM_BASE             "rune"
-#define COIN_DEFAULT_DENOM_REPR             "RUNE"
-#define COIN_DEFAULT_DENOM_REPR_2           "THOR.RUNE"
+#define COIN_DEFAULT_DENOM_BASE             "cacao"
+#define COIN_DEFAULT_DENOM_REPR             "CACAO"
+#define COIN_DEFAULT_DENOM_REPR_2           "MAYA.CACAO"
 #define COIN_DEFAULT_DENOM_FACTOR           8u
 #define COIN_DEFAULT_DENOM_TRIMMING         0u
 
