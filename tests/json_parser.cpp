@@ -365,7 +365,7 @@ namespace {
 
     TEST(TxValidationTest, ObjectGetValueCorrectFormat) {
         auto transaction =
-                R"({"account_number":"588","chain_id":"thorchain","fee":{"amount":[],"gas":"2000000"},"memo":"TestMemo","msgs":[{"type":"thorchain/MsgSend","value":{"amount":[{"amount":"150000000","denom":"rune"}],"from_address":"tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp","to_address":"tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e68lc9z","test":"test"}}],"sequence":"5"})";
+                R"({"account_number":"588","chain_id":"mayachain","fee":{"amount":[],"gas":"2000000"},"memo":"TestMemo","msgs":[{"type":"mayachain/MsgSend","value":{"amount":[{"amount":"150000000","denom":"cacao"}],"from_address":"tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73","to_address":"tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6sp5nj","test":"test"}}],"sequence":"5"})";
         parsed_json_t parsed_json;
         JSON_PARSE(&parsed_json, transaction);
 
