@@ -103,7 +103,7 @@ class JsonTests_Secp256 : public JsonTests {};
 INSTANTIATE_TEST_SUITE_P ( // NOLINT(cert-err58-cpp)
     JsonTestCases,
     JsonTests_Secp256,
-    ::testing::ValuesIn(GetJsonTestCases("testcases/thor.json")),
+    ::testing::ValuesIn(GetJsonTestCases("testcases/maya.json")),
     JsonTests_Secp256::PrintToStringParamName()
 );
 
