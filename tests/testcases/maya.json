@@ -11,7 +11,7 @@
     "name": "multipleMessages",
     "tx": {
       "account_number": "588",
-      "chain_id": "thorchain",
+      "chain_id": "mayachain",
       "fee": {
         "amount": [],
         "gas": "2000000"
@@ -19,29 +19,29 @@
       "memo": "TestMemo",
       "msgs": [
         {
-          "type": "thorchain/MsgSend",
+          "type": "mayachain/MsgSend",
           "value": {
             "amount": [
               {
                 "amount": "150000000",
-                "denom": "rune"
+                "denom": "cacao"
               }
             ],
-            "from_address": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp",
-            "to_address": "tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e68lc9z"
+            "from_address": "tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73",
+            "to_address": "tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6sp5nj"
           }
         },
         {
-          "type": "thorchain/MsgSend",
+          "type": "mayachain/MsgSend",
           "value": {
             "amount": [
               {
                 "amount": "50000000",
-                "denom": "rune"
+                "denom": "cacao"
               }
             ],
-            "from_address": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp",
-            "to_address": "tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e68lc9z"
+            "from_address": "tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73",
+            "to_address": "tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6sp5nj"
           }
         }
       ],
@@ -50,19 +50,19 @@
     "parsingErr": "No error",
     "validationErr": "No error",
     "expected": [
-      "0 | Chain ID : thorchain",
+      "0 | Chain ID : mayachain",
       "1 | Account : 588",
       "2 | Sequence : 5",
       "3 | Type : Send",
-      "4 | Raw Amount : 150000000 rune",
-      "5 | From [1/2] : tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
+      "4 | Raw Amount : 150000000 cacao",
+      "5 | From [1/2] : tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
       "5 | From [2/2] : 5t5gp",
-      "6 | To [1/2] : tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
+      "6 | To [1/2] : tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
       "6 | To [2/2] : 8lc9z",
-      "7 | Raw Amount : 50000000 rune",
-      "8 | From [1/2] : tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
+      "7 | Raw Amount : 50000000 cacao",
+      "8 | From [1/2] : tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
       "8 | From [2/2] : 5t5gp",
-      "9 | To [1/2] : tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
+      "9 | To [1/2] : tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
       "9 | To [2/2] : 8lc9z",
       "10 | Memo : TestMemo",
       "11 | Fee : Empty",
@@ -74,23 +74,23 @@
     "name": "msgSendNoMemoExpert",
     "tx": {
       "account_number": "588",
-      "chain_id": "thorchain",
+      "chain_id": "mayachain",
       "fee": {
         "amount": [],
         "gas": "2000000"
       },
       "msgs": [
         {
-          "type": "thorchain/MsgSend",
+          "type": "mayachain/MsgSend",
           "value": {
             "amount": [
               {
                 "amount": "150000000",
-                "denom": "rune"
+                "denom": "cacao"
               }
             ],
-            "from_address": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp",
-            "to_address": "tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e68lc9z"
+            "from_address": "tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73",
+            "to_address": "tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6sp5nj"
           }
         }
       ],
@@ -99,14 +99,14 @@
     "parsingErr": "No error",
     "validationErr": "JSON Missing memo",
     "expected": [
-      "0 | Chain ID : thorchain",
+      "0 | Chain ID : mayachain",
       "1 | Account : 588",
       "2 | Sequence : 5",
       "3 | Type : Send",
-      "4 | Raw Amount : 150000000 rune",
-      "5 | From [1/2] : tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
+      "4 | Raw Amount : 150000000 cacao",
+      "5 | From [1/2] : tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
       "5 | From [2/2] : 5t5gp",
-      "6 | To [1/2] : tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
+      "6 | To [1/2] : tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
       "6 | To [2/2] : 8lc9z",
       "7 | Fee : Empty",
       "8 | Gas : 2000000"
@@ -117,23 +117,23 @@
     "name": "msgSendNoMemo",
     "tx": {
       "account_number": "588",
-      "chain_id": "thorchain",
+      "chain_id": "mayachain",
       "fee": {
         "amount": [],
         "gas": "2000000"
       },
       "msgs": [
         {
-          "type": "thorchain/MsgSend",
+          "type": "mayachain/MsgSend",
           "value": {
             "amount": [
               {
                 "amount": "150000000",
-                "denom": "rune"
+                "denom": "cacao"
               }
             ],
-            "from_address": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp",
-            "to_address": "tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e68lc9z"
+            "from_address": "tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73",
+            "to_address": "tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6sp5nj"
           }
         }
       ],
@@ -143,10 +143,10 @@
     "validationErr": "JSON Missing memo",
     "expected": [
       "0 | Type : Send",
-      "1 | Amount : 1.5 RUNE",
-      "2 | From [1/2] : tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
+      "1 | Amount : 1.5 CACAO",
+      "2 | From [1/2] : tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
       "2 | From [2/2] : 5t5gp",
-      "3 | To [1/2] : tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
+      "3 | To [1/2] : tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
       "3 | To [2/2] : 8lc9z"
     ],
     "expert": false
@@ -155,7 +155,7 @@
     "name": "msgSendEmptyMemoExpert",
     "tx": {
       "account_number": "588",
-      "chain_id": "thorchain",
+      "chain_id": "mayachain",
       "fee": {
         "amount": [],
         "gas": "2000000"
@@ -163,16 +163,16 @@
       "memo": "",
       "msgs": [
         {
-          "type": "thorchain/MsgSend",
+          "type": "mayachain/MsgSend",
           "value": {
             "amount": [
               {
                 "amount": "150000000",
-                "denom": "rune"
+                "denom": "cacao"
               }
             ],
-            "from_address": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp",
-            "to_address": "tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e68lc9z"
+            "from_address": "tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73",
+            "to_address": "tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6sp5nj"
           }
         }
       ],
@@ -181,14 +181,14 @@
     "parsingErr": "No error",
     "validationErr": "No error",
     "expected": [
-      "0 | Chain ID : thorchain",
+      "0 | Chain ID : mayachain",
       "1 | Account : 588",
       "2 | Sequence : 5",
       "3 | Type : Send",
-      "4 | Raw Amount : 150000000 rune",
-      "5 | From [1/2] : tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
+      "4 | Raw Amount : 150000000 cacao",
+      "5 | From [1/2] : tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
       "5 | From [2/2] : 5t5gp",
-      "6 | To [1/2] : tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
+      "6 | To [1/2] : tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
       "6 | To [2/2] : 8lc9z",
       "7 | Fee : Empty",
       "8 | Gas : 2000000"
@@ -199,7 +199,7 @@
     "name": "msgSendEmptyMemo",
     "tx": {
       "account_number": "588",
-      "chain_id": "thorchain",
+      "chain_id": "mayachain",
       "fee": {
         "amount": [],
         "gas": "2000000"
@@ -207,16 +207,16 @@
       "memo": "",
       "msgs": [
         {
-          "type": "thorchain/MsgSend",
+          "type": "mayachain/MsgSend",
           "value": {
             "amount": [
               {
                 "amount": "150000000",
-                "denom": "rune"
+                "denom": "cacao"
               }
             ],
-            "from_address": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp",
-            "to_address": "tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e68lc9z"
+            "from_address": "tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73",
+            "to_address": "tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6sp5nj"
           }
         }
       ],
@@ -226,10 +226,10 @@
     "validationErr": "No error",
     "expected": [
       "0 | Type : Send",
-      "1 | Amount : 1.5 RUNE",
-      "2 | From [1/2] : tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
+      "1 | Amount : 1.5 CACAO",
+      "2 | From [1/2] : tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
       "2 | From [2/2] : 5t5gp",
-      "3 | To [1/2] : tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
+      "3 | To [1/2] : tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6",
       "3 | To [2/2] : 8lc9z"
     ],
     "expert": false
@@ -275,7 +275,7 @@
     "name": "msgDepositMultipleAmountsExpert",
     "tx": {
       "account_number": "588",
-      "chain_id": "thorchain",
+      "chain_id": "mayachain",
       "fee": {
           "amount": [],
           "gas": "10000000"
@@ -283,12 +283,12 @@
       "memo": "",
       "msgs": [
           {
-              "type": "thorchain/MsgDeposit",
+              "type": "mayachain/MsgDeposit",
               "value": {
                   "coins": [
                       {
                           "amount": "330000000",
-                          "asset": "THOR.RUNE"
+                          "asset": "MAYA.CACAO"
                       },
                       {
                         "amount": "220000000",
@@ -296,7 +296,7 @@
                     }
                   ],
                   "memo": "SWAP:BNB.BNB:tbnb1qk2m905ypazwfau9cn0qnr4c4yxz63v9u9md20:",
-                  "signer": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp"
+                  "signer": "tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73"
               }
           }
       ],
@@ -305,15 +305,15 @@
     "parsingErr": "No error",
     "validationErr": "No error",
     "expected": [
-      "0 | Chain ID : thorchain",
+      "0 | Chain ID : mayachain",
       "1 | Account : 588",
       "2 | Sequence : 6",
       "3 | Type : Deposit",
-      "4 | Raw Amount [1/2] : 330000000 THOR.RUNE",
+      "4 | Raw Amount [1/2] : 330000000 MAYA.CACAO",
       "4 | Raw Amount [2/2] : 220000000 BSC.USDT",
       "5 | Memo [1/2] : SWAP:BNB.BNB:tbnb1qk2m905ypazwfau9cn0qn",
       "5 | Memo [2/2] : r4c4yxz63v9u9md20:",
-      "6 | Sender [1/2] : tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
+      "6 | Sender [1/2] : tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
       "6 | Sender [2/2] : 5t5gp",
       "7 | Fee : Empty",
       "8 | Gas : 10000000"
@@ -324,22 +324,22 @@
     "name": "msgDepositNoMemoExpert",
     "tx": {
       "account_number": "588",
-      "chain_id": "thorchain",
+      "chain_id": "mayachain",
       "fee": {
           "amount": [],
           "gas": "10000000"
       },
       "msgs": [
           {
-              "type": "thorchain/MsgDeposit",
+              "type": "mayachain/MsgDeposit",
               "value": {
                   "coins": [
                       {
                           "amount": "330000000",
-                          "asset": "THOR.RUNE"
+                          "asset": "MAYA.CACAO"
                       }
                   ],
-                  "signer": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp"
+                  "signer": "tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73"
               }
           }
       ],
@@ -348,12 +348,12 @@
     "parsingErr": "No error",
     "validationErr": "JSON Missing memo",
     "expected": [
-      "0 | Chain ID : thorchain",
+      "0 | Chain ID : mayachain",
       "1 | Account : 588",
       "2 | Sequence : 6",
       "3 | Type : Deposit",
-      "4 | Raw Amount : 330000000 THOR.RUNE",
-      "5 | Sender [1/2] : tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
+      "4 | Raw Amount : 330000000 MAYA.CACAO",
+      "5 | Sender [1/2] : tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgv",
       "5 | Sender [2/2] : 5t5gp",
       "6 | Fee : Empty",
       "7 | Gas : 10000000"
