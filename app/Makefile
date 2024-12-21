@@ -45,14 +45,14 @@ $(info ************ TARGET_NAME  = [$(TARGET_NAME)])
 include $(CURDIR)/../deps/ledger-zxlib/makefiles/Makefile.app_testing
 
 ifndef COIN
-COIN=RUNE
+COIN=CACAO
 endif
 
 $(info COIN  = [$(COIN)])
 
-ifeq ($(COIN),RUNE)
+ifeq ($(COIN),CACAO)
 # Main app configuration
-APPNAME = "THORChain"
+APPNAME = "MAYAChain"
 APPPATH = "44'/931'"
 else
 define error_message
@@ -110,7 +110,7 @@ dep/%.d: %.c Makefile
 
 .PHONY: listvariants
 listvariants:
-	@echo VARIANTS COIN RUNE
+	@echo VARIANTS COIN CACAO
 
 .PHONY: version
 version:
