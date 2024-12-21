@@ -16,7 +16,7 @@
 
 import Zemu, { ClickNavigation, TouchNavigation, IDeviceModel } from '@zondax/zemu'
 // @ts-ignore
-import { ThorchainApp } from '@blooo/ledger-thorchain-js'
+import { MayachainApp } from '@blooo/ledger-mayachain-js'
 import {
   defaultOptions,
   DEVICE_MODELS,
@@ -38,11 +38,11 @@ async function signAndVerifyTransaction(m: IDeviceModel, test_name: String, tran
   const sim = new Zemu(m.path);
   try {
     await sim.start({ ...defaultOptions, model: m.name });
-    const app = new ThorchainApp(sim.getTransport());
+    const app = new MayachainApp(sim.getTransport());
 
     const path = [44, 931, 0, 0, 0];
     const tx = Buffer.from(JSON.stringify(transaction), "utf-8");
-    const hrp = 'thor';
+    const hrp = 'maya';
 
     // get address / publickey
     const respPk = await app.getAddressAndPubKey(path, hrp);
@@ -80,7 +80,7 @@ async function signAndVerifyTransaction(m: IDeviceModel, test_name: String, tran
   }
 }
 
-describe('Thor', function () {
+describe('Maya', function () {
   // eslint-disable-next-line jest/expect-expect
   test.concurrent.each([DEVICE_MODELS])('can start and stop container', async function (m) {
     const sim = new Zemu(m.path)
