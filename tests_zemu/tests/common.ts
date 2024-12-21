@@ -43,7 +43,7 @@ export const DEVICE_MODELS: IDeviceModel[] = [
 
 export const example_tx_str_MsgSend = {
   "account_number": "588",
-  "chain_id": "thorchain",
+  "chain_id": "mayachain",
   "fee": {
       "amount": [],
       "gas": "2000000"
@@ -51,16 +51,16 @@ export const example_tx_str_MsgSend = {
   "memo": "TestMemo",
   "msgs": [
       {
-          "type": "thorchain/MsgSend",
+          "type": "mayachain/MsgSend",
           "value": {
               "amount": [
                   {
                       "amount": "150000000",
-                      "denom": "rune"
+                      "denom": "cacao"
                   }
               ],
-              "from_address": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp",
-              "to_address": "tthor10xgrknu44d83qr4s4uw56cqxg0hsev5e68lc9z"
+              "from_address": "tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73",
+              "to_address": "tmaya10xgrknu44d83qr4s4uw56cqxg0hsev5e6sp5nj"
           }
       }
   ],
@@ -69,7 +69,7 @@ export const example_tx_str_MsgSend = {
 
 export const example_tx_str_MsgDeposit = {
   "account_number": "588",
-  "chain_id": "thorchain",
+  "chain_id": "mayachain",
   "fee": {
       "amount": [],
       "gas": "10000000"
@@ -77,16 +77,16 @@ export const example_tx_str_MsgDeposit = {
   "memo": "",
   "msgs": [
       {
-          "type": "thorchain/MsgDeposit",
+          "type": "mayachain/MsgDeposit",
           "value": {
               "coins": [
                   {
                       "amount": "330000000",
-                      "asset": "THOR.RUNE"
+                      "asset": "MAYA.CACAO"
                   }
               ],
               "memo": "SWAP:BNB.BNB:tbnb1qk2m905ypazwfau9cn0qnr4c4yxz63v9u9md20:",
-              "signer": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp"
+              "signer": "tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73"
           }
       }
   ],
@@ -95,7 +95,7 @@ export const example_tx_str_MsgDeposit = {
 
 export const example_tx_str_MsgDeposit_token_2 = {
     "account_number": "588",
-    "chain_id": "thorchain",
+    "chain_id": "mayachain",
     "fee": {
         "amount": [],
         "gas": "10000000"
@@ -103,7 +103,7 @@ export const example_tx_str_MsgDeposit_token_2 = {
     "memo": "",
     "msgs": [
         {
-            "type": "thorchain/MsgDeposit",
+            "type": "mayachain/MsgDeposit",
             "value": {
                 "coins": [
                     {
@@ -112,7 +112,7 @@ export const example_tx_str_MsgDeposit_token_2 = {
                     }
                 ],
                 "memo": "SWAP:BNB.BNB:tbnb1qk2m905ypazwfau9cn0qnr4c4yxz63v9u9md20:",
-                "signer": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp"
+                "signer": "tmaya1c648xgpter9xffhmcqvs7lzd7hxh0prgvr4c73"
             }
         }
     ],
