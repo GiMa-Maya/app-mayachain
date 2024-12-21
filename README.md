@@ -1,4 +1,4 @@
-# Ledger THORChain app
+# Ledger MAYAChain app
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ---
@@ -7,9 +7,9 @@ Forked from [Cosmos App](https://github.com/LedgerHQ/app-cosmos) by Zondax
 
 ---
 
-This project contains the THORChain app for Ledger Nano S, Nano S+, X, Flex and Stax.
+This project contains the MAYAChain app for Ledger Nano S, Nano S+, X, Flex and Stax.
 
-- Ledger Nano S/S+/X/Flex/Stax THORChain app
+- Ledger Nano S/S+/X/Flex/Stax MAYAChain app
 - Specs / Documentation
 - C++ unit tests
 - Zemu tests
