@@ -18,7 +18,7 @@
     "test": "yarn clean && jest --maxConcurrency 2"
   },
   "dependencies": {
-    "@blooo/ledger-thorchain-js": "^1.0.1",
+    "@blooo/ledger-mayachain-js": "^1.0.1",
     "@zondax/zemu": "^0.50.2"
   },
   "devDependencies": {
